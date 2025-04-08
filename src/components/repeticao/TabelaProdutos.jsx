@@ -7,7 +7,7 @@ export default props => {
     const ProdutosTh = Produtos.map((produto, i) => {
 
         return (
-            <tr className={i % 2 == 0 ? 'Par' : 'Impar'}>
+            <tr className={i % 2 === 0 ? 'Par' : 'Impar'}>
                 <td>{produto.id}</td>
                 <td>{produto.name}</td>
                 <td>{produto.preco}</td>

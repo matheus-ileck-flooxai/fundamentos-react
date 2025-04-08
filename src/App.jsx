@@ -1,6 +1,8 @@
 import './App.css'
 import React from "react";
 
+import UsuarioInfo from './components/condicional/UsuarioInfo';
+import ParOuImpar from './components/condicional/ParOuImpar';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import Primeiro from './components/basicos/Primeiro'
 import ListaAlunos from './components/repeticao/ListaAlunos';
@@ -16,6 +18,12 @@ export default props => (
 
         <div className="Cards">
 
+            <Card titulo="#08 - Condicional" color="#FF4C65">
+                <ParOuImpar numero={21}></ParOuImpar>
+                <UsuarioInfo usuario={{nome: 'Matheus'}}></UsuarioInfo>
+
+
+            </Card>
 
             <Card titulo="#07 - Repetição Produtos" color="#FF4C65">
                 <TabelaProdutos></TabelaProdutos>
