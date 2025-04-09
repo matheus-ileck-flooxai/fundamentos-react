@@ -1,6 +1,9 @@
 import './App.css'
 import React from "react";
 
+import Input from './components/formulario/Input';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
+import DiretaPai from './components/comunicacao/DiretaPai';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
@@ -18,11 +21,22 @@ export default props => (
 
         <div className="Cards">
 
+            <Card titulo="#10 - Comunicação indireta" color="#8BAD39">
+                    <Input></Input>
+            </Card>
+
+
+            <Card titulo="#10 - Comunicação indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+
+            </Card>
+            <Card titulo="#09 - Comunicação direta" color="#59323C">
+                <DiretaPai></DiretaPai>
+
+            </Card>
             <Card titulo="#08 - Condicional" color="#FF4C65">
                 <ParOuImpar numero={21}></ParOuImpar>
-                <UsuarioInfo usuario={{nome: 'Matheus'}}></UsuarioInfo>
-
-
+                <UsuarioInfo usuario={{ nome: 'Matheus' }}></UsuarioInfo>
             </Card>
 
             <Card titulo="#07 - Repetição Produtos" color="#FF4C65">
